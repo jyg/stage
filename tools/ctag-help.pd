@@ -1,0 +1,13 @@
+#N canvas 279 304 450 300 12;
+#X text 125 18 creates a key / array pair in json file;
+#X obj 121 61 ctag cars;
+#X obj 186 102 atag "Ford";
+#X obj 186 127 atag "BMW";
+#X obj 186 157 atag "FIAT";
+#X obj 186 182 atag 1;
+#X obj 186 207 atag 2;
+#X connect 1 1 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;

@@ -1,0 +1,19 @@
+#N canvas 464 424 571 490 12;
+#X text 153 219 - a string :;
+#X obj 296 222 tag origin "auto";
+#X text 153 249 - an empty string :;
+#X obj 296 252 tag preArgs "";
+#X text 153 279 - a sfloat :;
+#X obj 296 282 tag decimals 2;
+#X text 34 116 you can set or change the value usinmg the right inlet
+;
+#X text 28 21 creates a key / boolean pair in json file;
+#X obj 88 74 btag snap false;
+#X obj 214 46 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X msg 296 42 true;
+#X msg 300 62 false;
+#X text 81 177 for other data types \, use tag object;
+#X connect 9 0 8 1;
+#X connect 10 0 8 1;
+#X connect 11 0 8 1;

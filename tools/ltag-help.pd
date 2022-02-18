@@ -1,0 +1,13 @@
+#N canvas 508 684 450 300 12;
+#X obj 121 61 ltag;
+#X obj 102 163 ltag <key>;
+#X text 125 18 adds curly brackets in json file;
+#X text 114 92 n;
+#X text 146 91 n+1;
+#X text 22 89 hierarchy;
+#X text 206 165 prepende a key name;
+#X obj 236 212 ltag range;
+#X obj 305 247 tag min 0;
+#X obj 305 272 tag max 1;
+#X connect 7 1 8 0;
+#X connect 8 0 9 0;

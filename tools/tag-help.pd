@@ -1,0 +1,21 @@
+#N canvas 464 424 571 490 12;
+#X obj 87 60 tag "key" <value>;
+#X text 28 21 creates a key / value pair in json file;
+#X text 126 177 <value> can be;
+#X text 153 219 - a string :;
+#X obj 296 222 tag origin "auto";
+#X text 153 249 - an empty string :;
+#X obj 296 252 tag preArgs "";
+#X text 153 279 - a sfloat :;
+#X obj 296 282 tag decimals 2;
+#X obj 246 387 btag bypass false;
+#X obj 376 351 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X msg 425 338 true;
+#X msg 424 374 false;
+#X text 34 116 you can set or change the value usinmg the right inlet
+;
+#X text 128 327 for boolean \, use btag;
+#X connect 10 0 9 1;
+#X connect 11 0 9 1;
+#X connect 12 0 9 1;

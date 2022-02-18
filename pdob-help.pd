@@ -1,0 +1,28 @@
+#N canvas 125 36 828 586 12;
+#X obj 100 100 cnv 15 400 400 empty empty BACKGROUND 20 12 0 14 #dfdfdf
+#dfdfdf 0;
+#X obj 118 147 vsl 80 256 0.25 4 1 1 vfader_1 vfader_1-rcv FADER1 3
+23 0 10 #faff00 #000000 #000000 18600 0;
+#X obj 204 147 vsl 80 256 0 127 0 0 vfader_2 vfader_2-rcv FADER2 0
+-9 0 10 #ff0400 #000000 #9c00ff 0 1;
+#X floatatom 635 443 5 0 0 0 - - - 0;
+#X obj 635 418 r vfader_1;
+#X floatatom 536 441 5 0 0 0 - - - 0;
+#X obj 536 416 r vfader_2;
+#X obj 110 443 hsl 380 50 0 127 0 0 timeline timeline-rcv TIMELINE
+-2 -8 0 10 #c7c6ff #000000 #000000 0 1;
+#N canvas 1059 591 450 250 (subpatch) 0;
+#X array array1 128 float 0;
+#X coords 0 1 127 0 200 140 2 0 0;
+#X restore 294 152 graph;
+#X obj 516 350 s array1-rcv;
+#X msg 516 324 refresh;
+#X obj 524 134 pdob;
+#N canvas 636 512 450 300 pdob-stuff 0;
+#X restore 524 104 pd pdob-stuff;
+#X text 349 316 programmatically refresh remote GUI array :, f 21
+;
+#X connect 4 0 3 0;
+#X connect 6 0 5 0;
+#X connect 10 0 9 0;
+#X coords 0 -1 1 1 400 400 1 100 100;
