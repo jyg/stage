@@ -4,4 +4,4 @@ Controlling PureData patches from browser with [Open Stage Control](https://open
 
 **PdOB** is a series of abstractions for quickly creating an **OpenStageControl** .json file with GUI elements exported from an existing **PureData patch**. 
 
-Once created, the script has to be executed by the OpenStageControl server, and enables the control of the PureData patch from a **browser-based client interface**.
+Once created, the script has to be executed by the OpenStageControl server, and enables the control of the PureData patch from a **browser-based client interface**, such as Chrome, Firefox, on any target platform (desktop, IPad, Android), via local networking.
