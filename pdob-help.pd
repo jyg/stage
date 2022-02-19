@@ -1,8 +1,8 @@
-#N canvas 902 269 1267 579 16;
+#N canvas 298 221 1267 579 16;
 #X obj 100 100 cnv 15 400 400 empty empty BACKGROUND 20 12 0 14 #dfdfdf
 #dfdfdf 0;
 #X obj 118 147 vsl 80 256 0.25 4 1 1 vfader_1 vfader_1-rcv FADER1 3
-23 0 10 #faff00 #000000 #000000 15100 0;
+23 0 10 #faff00 #000000 #000000 7740 0;
 #X obj 204 147 vsl 80 256 0 127 0 0 vfader_2 vfader_2-rcv FADER2 0
 -9 0 10 #ff0400 #000000 #9c00ff 0 1;
 #X floatatom 673 437 5 0 0 0 - - - 0;
@@ -18,10 +18,10 @@
 #X obj 554 344 s array1-rcv;
 #X msg 554 318 refresh;
 #X obj 562 128 pdob;
-#X text 291 286 programmatically refresh remote GUI array :, f 21
+#X text 294 297 programmatically refresh remote GUI array :, f 19
 ;
-#X obj 297 377 tgl 60 1 my_toogle my_toogle-rcv toogle 60 7 0 20 #c6feff
-#0400ff #000000 0 1;
+#X obj 298 363 tgl 60 1 my_toogle my_toogle-rcv toogle 60 7 0 20 #c6feff
+#0400ff #000000 1 1;
 #N canvas 0 0 450 300 pdob-stuff 0;
 #X obj 20 50 tools/pdob_listener vfader_1 vfader_1-rcv;
 #X obj 20 100 tools/pdob_listener vfader_2 vfader_2-rcv;
