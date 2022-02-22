@@ -6,7 +6,7 @@ Controlling PureData patches from browser with [Open Stage Control](https://open
 
 Once created, the script has to be executed by the OpenStageControl server, and enables the control of the PureData patch from a **browser-based client interface**, such as Chrome, Firefox, on any target platform (desktop, IPad, Android), via local networking.
 
-## Current supported widgets :
+## Current supported and exported widgets :
 * hsl /vsl
 * bng
 * tgl
