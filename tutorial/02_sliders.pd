@@ -1,0 +1,11 @@
+#N canvas 958 220 714 656 16;
+#X obj 431 61 pdob;
+#X obj 154 218 hsl 128 60 0 127 0 0 sl1 sl1-rcv empty -2 -8 0 10 #ff8300
+#ff0400 #000000 0 1;
+#X obj 310 223 vsl 50 128 0 127 0 0 sl2 sl2-rcv empty 0 -9 0 10 #00faff
+#000000 #000000 0 1;
+#N canvas 0 50 450 300 pdob-stuff 0;
+#X obj 20 50 pdob/tools/pdob_listener sl1 sl1-rcv;
+#X obj 20 100 pdob/tools/pdob_listener sl2 sl2-rcv;
+#X restore 431 31 pd pdob-stuff;
+#X coords 0 -1 1 1 300 200 1 100 200;

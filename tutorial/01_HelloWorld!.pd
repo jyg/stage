@@ -1,0 +1,39 @@
+#N canvas 958 220 714 656 16;
+#X obj 338 265 bng 100 250 50 0 my_bang my_bang-rcv HelloWorld! -20
+-20 0 40 #fcfcfc #000000 #000000;
+#X text 34 69 1) Enable graph on parent on your main patch;
+#X text 70 105 This will define the display area \, where you can put
+all yout widgets, f 41;
+#X text 42 250 2) IMPORTANT : you must have set 'send' and 'receive'
+properties of yours widgets ------------>, f 27;
+#X text 32 553 4) Click on the red button to generate a json file;
+#X text 54 426 3) create a [pdob] object here ----->, f 18;
+#N canvas 0 0 450 300 hello_bip 0;
+#X obj 63 29 inlet;
+#X obj 94 100 line~;
+#X obj 304 94 loadbang;
+#X msg 304 123 \; pd dsp 1;
+#X obj 235 193 osc~ 440;
+#X obj 94 225 *~;
+#X obj 94 254 dac~;
+#X obj 94 143 *~;
+#X msg 95 68 0.5 \, 0 800;
+#X obj 94 184 lop~ 10;
+#X connect 0 0 8 0;
+#X connect 1 0 7 0;
+#X connect 1 0 7 1;
+#X connect 2 0 3 0;
+#X connect 4 0 5 1;
+#X connect 5 0 6 0;
+#X connect 5 0 6 1;
+#X connect 7 0 9 0;
+#X connect 8 0 1 0;
+#X connect 9 0 5 0;
+#X restore 528 410 pd hello_bip;
+#X text 33 593 5) Run the json file with OpenStageControl;
+#X obj 273 443 pdob;
+#N canvas 0 50 450 300 pdob-stuff 0;
+#X obj 20 50 pdob/tools/pdob_bng_listener my_bang my_bang-rcv 50;
+#X restore 273 413 pd pdob-stuff;
+#X connect 0 0 6 0;
+#X coords 0 -1 1 1 300 200 1 300 200;

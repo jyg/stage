@@ -8,14 +8,21 @@
 #X obj 296 252 tag preArgs "";
 #X text 153 279 - a sfloat :;
 #X obj 296 282 tag decimals 2;
-#X obj 246 387 btag bypass false;
-#X obj 376 351 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#X obj 196 457 btag bypass false;
+#X obj 326 421 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
-#X msg 425 338 true;
-#X msg 424 374 false;
+#X msg 375 408 true;
+#X msg 374 444 false;
 #X text 34 116 you can set or change the value usinmg the right inlet
 ;
-#X text 128 327 for boolean \, use btag;
+#X text 78 397 for boolean \, use btag;
+#X obj 136 352 tag decimals 2;
+#X text 43 319 you can change the value;
+#X floatatom 251 324 5 0 0 0 - - - 0;
+#X msg 344 346 address "auto";
+#X text 335 319 and the property name;
 #X connect 10 0 9 1;
 #X connect 11 0 9 1;
 #X connect 12 0 9 1;
+#X connect 17 0 15 1;
+#X connect 18 0 15 1;

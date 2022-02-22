@@ -1,0 +1,16 @@
+#N canvas 891 336 828 414 12;
+#X obj 461 24 pdob;
+#N canvas 0 50 450 300 pdob-stuff 0;
+#X obj 20 50 pdob/tools/pdob_listener tgl tgl-rcv;
+#X obj 20 100 pdob/tools/pdob_listener my_vradio my_vradio-rcv;
+#X obj 20 150 pdob/tools/pdob_listener hradio hradio-rcv;
+#X restore 461 -6 pd pdob-stuff;
+#X obj 99 99 cnv 15 300 300 empty empty BACKGROUND 20 12 0 14 #e0e0e0
+#404040 0;
+#X obj 172 166 tgl 50 0 tgl tgl-rcv empty 17 7 0 10 #0400ff #00ff04
+#000000 0 1;
+#X obj 285 131 vradio 60 1 0 4 my_vradio my_vradio-rcv My_vradio 0
+-8 0 10 #ff0400 #00ff04 #0400ff 0;
+#X obj 108 281 hradio 50 1 0 3 hradio hradio-rcv hradio 0 -8 0 10 #faff00
+#535512 #ff0400 0;
+#X coords 0 -1 1 1 300 300 1 100 100;
