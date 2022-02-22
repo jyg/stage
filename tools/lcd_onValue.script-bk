@@ -1,0 +1,1 @@
+"// apply limits\nvar x = Math.max(0, Math.min(1, value[1])),\n    y = Math.max(0, Math.min(1, value[2]))\n  \nlocals.queue.push([value[0],x,y])\n\n// re-update widget value without retriggering script or sending message\nset(\"this\", [value[0],x,y], {sync: false, send: false})\n"

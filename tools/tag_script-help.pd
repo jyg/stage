@@ -1,0 +1,24 @@
+#N canvas 464 424 863 501 12;
+#X text 28 21 creates a key / script pair in json file \, the script
+being loaded from a script file;
+#X msg 284 216 open \$1 r \, 4096 \, close;
+#X obj 285 190 openpanel;
+#X obj 284 168 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X text 307 165 load another script;
+#X msg 290 342 prepend 32 32 32;
+#X msg 288 301 append 32 32 32;
+#X text 34 116 you can load another file \, prepend and/or append its
+content with a binary list;
+#X msg 280 255 set 32 32 32 32;
+#X text 400 253 replace script content by binary list;
+#X text 410 293 append binary list to script content;
+#X text 420 337 prepend binary list to script content;
+#X obj 82 72 tag_script "onValue" file.script;
+#X obj 33 397 tag_script "onValue" file.script;
+#X connect 1 0 13 1;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 5 0 13 1;
+#X connect 6 0 13 1;
+#X connect 8 0 13 1;
