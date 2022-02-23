@@ -1,7 +1,5 @@
 #N canvas 958 220 933 655 16;
 #X obj 91 85 stage;
-#N canvas 0 0 450 300 stage-stuff 0;
-#X restore 91 55 pd stage-stuff;
 #X obj 35 483 bng 15 250 50 0 \$0-save_as empty save_as 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X obj 33 452 bng 15 250 50 0 \$0-process empty generate_json_file!

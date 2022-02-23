@@ -5,7 +5,7 @@
 #X obj 20 100 stage/tools/stage_listener my_vradio my_vradio-rcv;
 #X obj 20 150 stage/tools/stage_listener hradio hradio-rcv;
 #X restore 461 -6 pd stage-stuff;
-#X obj 99 199 cnv 15 300 300 empty empty BACKGROUND 20 12 0 14 #e0e0e0
+#X obj 99 199 cnv 15 300 300 empty empty BACKGROUND 20 12 0 14 #ffe3c6
 #404040 0;
 #X obj 172 266 tgl 50 0 tgl tgl-rcv empty 17 7 0 10 #0400ff #00ff04
 #000000 0 1;

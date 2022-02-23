@@ -1,0 +1,21 @@
+#N canvas 860 284 676 462 16;
+#X obj 127 135 vsl 50 128 0 127 0 0 my_vsl my_vsl-rcv empty 0 -9 0
+10 #fcfcfc #000000 #000000 0 1;
+#N canvas 0 50 450 300 stage-stuff 0;
+#X obj 20 50 stage/tools/stage_listener my_vsl my_vsl-rcv;
+#X obj 20 100 stage/tools/stage_listener my_tgl my_tgl-rcv;
+#X obj 20 150 stage/tools/stage_bng_listener my_bng my_bng-rcv 50;
+#X obj 20 200 stage/tools/stage_listener my_vradio my_vradio-rcv;
+#X restore 431 111 pd stage-stuff;
+#X obj 274 143 tgl 50 0 my_tgl my_tgl-rcv empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 274 213 bng 50 250 50 0 my_bng my_bng-rcv empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 184 173 vradio 50 1 0 4 my_vradio my_vradio-rcv empty 0 -8 0
+10 #fcfcfc #000000 #000000 0;
+#X obj 431 179 stage/connect;
+#X text 29 25 Once you generated the .json file \, you can replace
+[stage] by [stage/connect] abstraction to enable remote control but
+prevent changes in .json file;
+#X text 426 154 [stage/connect];
+#X coords 0 -1 1 1 300 300 1 100 100;

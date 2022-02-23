@@ -1,5 +1,4 @@
-#N canvas 891 336 733 545 16;
-#X obj 461 24 stage;
+#N canvas 891 336 822 537 16;
 #N canvas 0 50 450 300 stage-stuff 0;
 #X obj 20 50 stage/tools/stage_listener tgl tgl-rcv;
 #X obj 20 100 stage/tools/stage_listener my_vradio my_vradio-rcv;
@@ -19,9 +18,12 @@
 #X floatatom 296 80 5 0 1 0 - - - 0;
 #X text 24 74 You can programmatically do scrolling on clients \, but
 it's a bit tricky., f 25;
-#X text 25 7 If widgets appear outside of GOP (graph On Parent) zone
-\, they can be accessed on client GUI by scrolling., f 36;
-#X connect 6 0 7 0;
-#X connect 8 0 6 0;
-#X connect 9 0 8 0;
+#X text 25 7 If widgets appear outside of the GOP (graph On Parent)
+zone \, they can be accessed on client GUI by scrolling., f 36;
+#X obj 640 102 stage/connect;
+#X text 463 35 Once you rendered your .json script \, you can replace
+[stage] by [stage/connect] abstraction, f 32;
+#X connect 5 0 6 0;
+#X connect 7 0 5 0;
+#X connect 8 0 7 0;
 #X coords 0 -1 1 1 300 300 1 100 200;
