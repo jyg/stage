@@ -11,7 +11,8 @@ Once created, the script has to be executed by the OpenStageControl server, and 
 * iemguts externals lib
 
 ## Install
-* clone or download github project
+* You must preliminary have installed [Open Stage Control stuff](https://openstagecontrol.ammd.net/) .
+* clone or download https://github.com/jyg/stage project
 * copy (and rename) *stage* parent folder (and all its content) into your puredata externals folder
 
 ![image](https://user-images.githubusercontent.com/1431894/155305113-38f7d2cb-5cdb-470a-b609-f55e97aacc9d.png)
