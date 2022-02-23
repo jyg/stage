@@ -22,7 +22,7 @@ Once created, the script has to be executed by the OpenStageControl server, and 
 
 * read doc and tutorials
 
-## Current supported and exported widgets :
+## Currently supported and exported widgets :
 * hsl / vsl
 * bng
 * tgl
