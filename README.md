@@ -10,6 +10,10 @@ Once created, the script has to be executed by the OpenStageControl server, and 
 * pd > 0.52
 * iemguts externals lib
 
+## Install
+* clone or download github project
+* copy (and rename) *stage* parent folder into your puredata externals folder
+
 ## Current supported and exported widgets :
 * hsl / vsl
 * bng
