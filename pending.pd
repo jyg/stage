@@ -254,13 +254,13 @@ https://forum.pdpatchrepo.info/topic/11184/colarray-a-graphical-array-where-colo
 #X text 951 460 open stage remote;
 #X text 681 265 X backgroundcolor : placer un canvas avec le label
 BACKGROUND, f 66;
-#X obj 561 112 pdob;
-#N canvas 636 512 450 300 pdob-stuff 0;
-#X obj 20 50 tools/pdob_listener vfader_1 vfader_1-rcv;
-#X obj 20 100 tools/pdob_listener vfader_2 vfader_2-rcv;
-#X obj 20 150 tools/pdob_listener timeline timeline-rcv;
-#X obj 20 200 tools/pdob_array_listener array1 array1-rcv;
-#X restore 561 82 pd pdob-stuff;
+#X obj 561 112 stage;
+#N canvas 636 512 450 300 stage-stuff 0;
+#X obj 20 50 tools/stage_listener vfader_1 vfader_1-rcv;
+#X obj 20 100 tools/stage_listener vfader_2 vfader_2-rcv;
+#X obj 20 150 tools/stage_listener timeline timeline-rcv;
+#X obj 20 200 tools/stage_array_listener array1 array1-rcv;
+#X restore 561 82 pd stage-stuff;
 #X msg 331 652 \; array1 width 4;
 #X obj 378 779 get - color linewidth;
 #X floatatom 378 804 5 0 0 0 - - - 0;

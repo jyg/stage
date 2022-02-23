@@ -17,19 +17,19 @@
 #X restore 294 152 graph;
 #X obj 554 344 s array1-rcv;
 #X msg 554 318 refresh;
-#X obj 562 128 pdob;
+#X obj 562 128 stage;
 #X text 294 297 programmatically refresh remote GUI array :, f 19
 ;
 #X obj 298 363 tgl 60 1 my_toogle my_toogle-rcv toogle 60 7 0 20 #c6feff
 #0400ff #000000 0 1;
-#N canvas 0 0 735 343 pdob-stuff 0;
-#X obj 20 50 tools/pdob_listener vfader_1 vfader_1-rcv;
-#X obj 20 100 tools/pdob_listener vfader_2 vfader_2-rcv;
-#X obj 20 150 tools/pdob_listener timeline timeline-rcv;
-#X obj 20 200 tools/pdob_array_listener array1 array1-rcv;
-#X obj 20 250 tools/pdob_listener my_toogle my_toogle-rcv;
-#X obj 20 300 tools/pdob_bng_listener my_bang my_bang-rcv 250;
-#X restore 562 98 pd pdob-stuff;
+#N canvas 0 0 735 343 stage-stuff 0;
+#X obj 20 50 tools/stage_listener vfader_1 vfader_1-rcv;
+#X obj 20 100 tools/stage_listener vfader_2 vfader_2-rcv;
+#X obj 20 150 tools/stage_listener timeline timeline-rcv;
+#X obj 20 200 tools/stage_array_listener array1 array1-rcv;
+#X obj 20 250 tools/stage_listener my_toogle my_toogle-rcv;
+#X obj 20 300 tools/stage_bng_listener my_bang my_bang-rcv 250;
+#X restore 562 98 pd stage-stuff;
 #X obj 427 392 bng 50 250 250 0 my_bang my_bang-rcv GO 2 20 0 40 #ff8300
 #00ff04 #ffffff;
 #X text 447 364 bng;

@@ -1,7 +1,7 @@
 #N struct struct_lineto float lx float ty float rx float by float width
 float color;
 #N canvas 803 37 1001 927 16;
-#X obj 684 54 pdob;
+#X obj 684 54 stage;
 #X obj 203 218 bng 100 250 50 0 reset reset-rcv RESET 17 30 0 20 #fcfcfc
 #000000 #000000;
 #X obj 200 324 mob/lcd my_lcd my_lcd-rcv 6;
@@ -14,9 +14,9 @@ float color;
 #A saved -name my_lcd;
 #A saved -size 500 376;
 #X obj 200 714 route 0 1 2;
-#N canvas 0 0 450 300 pdob-stuff 0;
-#X obj 20 50 pdob/tools/pdob_bng_listener reset reset-rcv 50;
-#X restore 684 24 pd pdob-stuff;
+#N canvas 0 0 450 300 stage-stuff 0;
+#X obj 20 50 stage/tools/stage_bng_listener reset reset-rcv 50;
+#X restore 684 24 pd stage-stuff;
 #X msg 78 758 clear;
 #X msg 238 750 moveto \$1 \$2;
 #X msg 257 778 lineto \$1 \$2;
