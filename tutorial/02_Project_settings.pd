@@ -1,0 +1,30 @@
+#N canvas 958 220 933 655 16;
+#X obj 91 85 stage;
+#N canvas 0 0 450 300 stage-stuff 0;
+#X restore 91 55 pd stage-stuff;
+#X obj 35 483 bng 15 250 50 0 \$0-save_as empty save_as 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 33 452 bng 15 250 50 0 \$0-process empty generate_json_file!
+17 7 0 10 #ff0400 #000000 #000000;
+#X obj 31 308 tgl 15 0 \$0-resizable \$0-resizable-rcv resizable 17
+7 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 34 518 cnv 15 100 20 empty \$0-GOP_display-rcv GOP\\\ size:300x200
+1 12 0 14 #ffffff #404040 0;
+#X obj 32 375 bng 15 250 50 0 \$0-network_settings empty network_settings
+17 7 0 10 #00ff04 #000000 #000000;
+#X text 70 320 GUI;
+#X obj 30 239 tgl 15 0 \$0-export_comments empty export_comments 17
+7 0 10 #fcfcfc #000000 #000000 0 1;
+#X text 180 232 if checked \, all comments contained in the patch will
+appear on the target platform., f 33;
+#X text 180 302 if checked \, the generated GUI can be resized on any
+target device, f 33;
+#X text 182 368 opens network settings \, i.e. Ip address and ports
+numbers for communication with Open Stage Server, f 41;
+#X text 182 445 generates the .json file for Open Stage Server;
+#X text 183 474 changes the target name for the .json file;
+#X text 193 515 displays the GUI area size;
+#X text 96 566 If you renamed your patch \, you have to close and reopen
+it in order to get the .json export name updated.;
+#X text 23 198 The [stage] object has several settings :;
+#X coords 0 -1 1 1 300 150 1 400 30;

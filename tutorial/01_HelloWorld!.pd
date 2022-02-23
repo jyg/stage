@@ -1,4 +1,4 @@
-#N canvas 958 220 714 656 16;
+#N canvas 708 27 772 684 16;
 #X obj 338 265 bng 100 250 50 0 my_bang my_bang-rcv HelloWorld! -20
 -20 0 40 #fcfcfc #000000 #000000;
 #X text 34 69 1) Enable graph on parent on your main patch;
@@ -8,7 +8,7 @@ all yout widgets, f 41;
 properties of yours widgets ------------>, f 27;
 #X text 32 553 4) Click on the red button to generate a json file;
 #X text 54 426 3) create a [stage] object here ----->, f 18;
-#N canvas 0 0 450 300 hello_bip 0;
+#N canvas 0 0 610 495 hello_bip 0;
 #X obj 63 29 inlet;
 #X obj 94 100 line~;
 #X obj 304 94 loadbang;
@@ -19,6 +19,13 @@ properties of yours widgets ------------>, f 27;
 #X obj 94 143 *~;
 #X msg 95 68 0.5 \, 0 800;
 #X obj 94 184 lop~ 10;
+#N canvas 0 0 450 300 visit_openstagecontrol_website 0;
+#X obj 92 36 r visit_openstagecontrol;
+#X msg 92 65 browse https://openstagecontrol.ammd.net/;
+#X obj 92 94 pdcontrol;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X restore 86 318 pd visit_openstagecontrol_website;
 #X connect 0 0 8 0;
 #X connect 1 0 7 0;
 #X connect 1 0 7 1;
@@ -33,7 +40,11 @@ properties of yours widgets ------------>, f 27;
 #X text 33 593 5) Run the json file with OpenStageControl;
 #X obj 273 443 stage;
 #N canvas 0 50 450 300 stage-stuff 0;
-#X obj 20 50 stage/tools/stage_bng_listener my_bang my_bang-rcv 50;
+#X obj 20 50 stage/tools/stage_bng_listener my_bang my_bang-rcv 50
+;
 #X restore 273 413 pd stage-stuff;
+#X obj 195 630 bng 15 250 50 0 visit_openstagecontrol empty more_info->
+20 7 0 16 #fcfcfc #000000 #000000;
+#X text 331 625 https://openstagecontrol.ammd.net/;
 #X connect 0 0 6 0;
 #X coords 0 -1 1 1 300 200 1 300 200;

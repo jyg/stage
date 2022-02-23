@@ -1,0 +1,27 @@
+#N canvas 891 336 733 545 16;
+#X obj 461 24 stage;
+#N canvas 0 50 450 300 stage-stuff 0;
+#X obj 20 50 stage/tools/stage_listener tgl tgl-rcv;
+#X obj 20 100 stage/tools/stage_listener my_vradio my_vradio-rcv;
+#X obj 20 150 stage/tools/stage_listener hradio hradio-rcv;
+#X restore 461 -6 pd stage-stuff;
+#X obj 101 200 cnv 15 600 300 empty empty BACKGROUND 20 12 0 14 #e0e0e0
+#404040 0;
+#X obj 172 266 tgl 50 0 tgl tgl-rcv empty 17 7 0 10 #0400ff #00ff04
+#000000 0 1;
+#X obj 630 250 vradio 60 1 0 4 my_vradio my_vradio-rcv My_vradio 0
+-8 0 10 #ff0400 #00ff04 #0400ff 0;
+#X obj 108 381 hradio 50 1 0 3 hradio hradio-rcv hradio 0 -8 0 10 #faff00
+#535512 #ff0400 0;
+#X obj 297 134 oscformat root;
+#X obj 296 161 s toOSC;
+#X msg 296 106 \$1 0;
+#X floatatom 296 80 5 0 1 0 - - - 0;
+#X text 24 74 You can programmatically do scrolling on clients \, but
+it's a bit tricky., f 25;
+#X text 25 7 If widgets appear outside of GOP (graph On Parent) zone
+\, they can be accessed on client GUI by scrolling., f 36;
+#X connect 6 0 7 0;
+#X connect 8 0 6 0;
+#X connect 9 0 8 0;
+#X coords 0 -1 1 1 300 300 1 100 200;
