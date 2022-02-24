@@ -27,6 +27,7 @@ Once created, the script has to be executed by the OpenStageControl server, and 
 * hsl / vsl
 * bng
 * tgl
+* nbx (number2  box)
 * hradio / vradio
 * comment
 * array
