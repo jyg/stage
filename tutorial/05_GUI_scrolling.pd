@@ -20,9 +20,7 @@
 it's a bit tricky., f 25;
 #X text 25 7 If widgets appear outside of the GOP (graph On Parent)
 zone \, they can be accessed on client GUI by scrolling., f 36;
-#X obj 640 102 stage/connect;
-#X text 463 35 Once you rendered your .json script \, you can replace
-[stage] by [stage/connect] abstraction, f 32;
+#X obj 462 31 stage;
 #X connect 5 0 6 0;
 #X connect 7 0 5 0;
 #X connect 8 0 7 0;

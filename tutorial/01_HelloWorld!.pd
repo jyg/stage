@@ -1,11 +1,7 @@
 #N canvas 708 27 772 684 16;
 #X obj 338 265 bng 100 250 50 0 my_bang my_bang-rcv HelloWorld! -20
 -20 0 40 #fcfcfc #000000 #000000;
-#X text 34 69 1) Enable graph on parent on your main patch;
-#X text 70 105 This will define the display area \, where you can put
-all yout widgets, f 41;
-#X text 42 250 2) IMPORTANT : you must have set 'send' and 'receive'
-properties of yours widgets ------------>, f 27;
+#X text 14 117 1) Enable graph on parent on your main patch;
 #X text 32 553 4) Click on the red button to generate a json file;
 #X text 54 426 3) create a [stage] object here ----->, f 18;
 #N canvas 0 0 610 495 hello_bip 0;
@@ -38,13 +34,17 @@ properties of yours widgets ------------>, f 27;
 #X connect 9 0 5 0;
 #X restore 528 410 pd hello_bip;
 #X text 33 593 5) Run the json file with OpenStageControl;
-#X obj 273 443 stage;
-#N canvas 0 50 450 300 stage-stuff 0;
-#X obj 20 50 stage/tools/stage_bng_listener my_bang my_bang-rcv 50
-;
-#X restore 273 413 pd stage-stuff;
-#X obj 195 630 bng 15 250 50 0 visit_openstagecontrol empty more_info->
+#X obj 273 84 bng 15 250 50 0 visit_openstagecontrol empty more_info->
 20 7 0 16 #fcfcfc #000000 #000000;
-#X text 331 625 https://openstagecontrol.ammd.net/;
-#X connect 0 0 6 0;
+#X text 407 80 https://openstagecontrol.ammd.net/;
+#X text 80 145 This will define the display area (red rectangle) \,
+where you can put all your widgets, f 54;
+#X text 20 238 2) IMPORTANT : all widgets must have defined names in
+'send' and 'receive' properties \, in order to communicate with remote
+GUI->, f 30;
+#X text 15 9 The [stage] abstraction exports the pd GUI layout into
+a .json file run by Open Stage Control software \, thus enabling remote
+control over the pd-patch.;
+#X obj 282 448;
+#X connect 0 0 4 0;
 #X coords 0 -1 1 1 300 200 1 300 200;

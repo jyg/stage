@@ -1,0 +1,52 @@
+#N canvas 860 284 743 532 16;
+#N canvas 0 50 450 300 stage-stuff 0;
+#X obj 20 50 stage/tools/stage_listener my_tgl my_tgl-rcv;
+#X obj 20 100 stage/tools/stage_bng_listener my_bng my_bng-rcv 50;
+#X obj 20 150 stage/tools/stage_listener my_hsl my_hsl-rcv;
+#X obj 20 200 stage/tools/stage_listener my_hradio my_hradio-rcv;
+#X obj 20 250 stage/tools/stage_array_listener array1 array1-rcv;
+#X restore 468 95 pd stage-stuff;
+#X obj 302 316 tgl 50 0 my_tgl my_tgl-rcv empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 237 316 bng 50 250 50 0 my_bng my_bng-rcv empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X text 74 81 * comments;
+#X text 71 150 * horizontal / vertical sliders;
+#X text 75 321 * bang / tgl;
+#X obj 92 175 hsl 128 50 0 127 0 0 my_hsl my_hsl-rcv empty -2 -8 0
+10 #fcfcfc #000000 #000000 0 1;
+#X text 68 231 * horizontal / vertical radios;
+#X obj 88 255 hradio 50 1 0 4 my_hradio my_hradio-rcv empty 0 -8 0
+10 #fcfcfc #000000 #000000 0;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array array1 100 float 3;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0.37 0.37 0.45 0.45 0.45 0.45 0.47 0.49
+0.51 0.52 0.53 0.534 0.538 0.542 0.546 0.55 0.554444 0.79 0.794 0.798
+0.802 0.806 0.81 0.814 0.818 0.822 0.826 0.83 0.831538 0.833077 0.834615
+0.836154 0.837692 0.839231 0.840769 0.842308 0.843846 0.845385 0.846923
+0.848461 0.85 0.851333 0.852667 0.854 0.855333 0.856667 0.858 0.859334
+0.860667 0.862 0.863334 0.864667 0.866 0.867334 0.868667 0.87 0.870741
+0.871482 0.872222 0.872963 0.873704 0.874445 0.875185 0.875926 0.876667
+0.877408 0.878148 0.878889 0.87963 0.880371 0.881112 0.881852 0.882593
+0.883334 0.884075 0.884815 0.885556 0.886297 0.887038 0.887778 0.888519
+0.88926 0.89 0.89 0.89 0.89 0.89 0.89 0.89;
+#X coords 0 1 100 -1 120 60 1 0 0;
+#X restore 170 397 graph;
+#X text 71 359 * arrays;
+#X text 76 470 * mob/widgets;
+#N canvas 1095 297 599 344 about_mob_widgets 0;
+#X obj 196 113 pdcontrol;
+#X msg 196 87 browse https://github.com/jyg/mob;
+#X text 65 200 * [mob/lcd] LCD panel (as in MobMuPlat);
+#X text 36 25 MOB widgets are abstractions allowing more advanced interaction
+features within puredata., f 46;
+#X text 32 88 project page ->;
+#X text 35 166 Currently supported mob/widgets are :;
+#X connect 1 0 0 0;
+#X restore 218 473 pd about_mob_widgets;
+#X text 429 91 \,;
+#X text 434 91 \,;
+#X text 71 107 they cannot contain quotation marks;
+#X text 55 53 For now \, supported widgets are :;
+#X obj 466 128 stage;
+#X coords 0 -1 1 1 400 450 1 50 50;

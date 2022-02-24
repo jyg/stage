@@ -113,7 +113,7 @@ is the default color of pd widgets, f 76;
 #X msg 198 145 color #ffffff #ffffff #ffffff;
 #X msg 169 176 color #ffffff #ffffff #000000;
 #X obj 100 100 tgl 50 0 empty tgl_target X 8 26 0 60 #ffffff #ffffff
-#ffffff 0 1;
+#000000 0 1;
 #X connect 0 0 1 0;
 #X connect 1 0 3 0;
 #X connect 1 1 4 0;
@@ -138,12 +138,12 @@ is the default color of pd widgets, f 76;
 #X connect 5 0 2 0;
 #X coords 0 -1 1 1 50 50 2 100 100;
 #X restore 684 213 pd bng;
-#X text 53 531 In O.S.C. \, h/vradios (selecteurs) are rendered with
-numbers;
 #X text 52 424 In O.S.C. \, sliders are rendered as faders;
 #X text 419 227 >>>>>>>;
 #X text 390 462 fader cursor color, f 20;
 #X text 388 489 fader contourscolor;
 #X text 116 459 slider background color;
 #X obj 709 463 stage;
+#X text 53 531 In O.S.C. \, h/vradios ('selecteurs') are rendered with
+numbers, f 62;
 #X coords 0 -1 1 1 300 300 1 100 100;
