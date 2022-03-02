@@ -4775,7 +4775,7 @@ système de remote control de automatonism3;
 #000000 #000000;
 #X obj 791 736 route #X;
 #X obj 774 930 pack f f;
-#X obj 101 143 cnv 15 100 20 empty \$0-GOP_display-rcv GOP\ size:500x500
+#X obj 101 143 cnv 15 100 20 empty \$0-GOP_display-rcv GOP\\\ size:500x500
 1 12 0 12 #ffffff #404040 0;
 #X obj 774 980 s \$0-GOP_display-rcv;
 #X msg 774 955 label GOP\\\ size:\$1x\$2;
@@ -8022,7 +8022,7 @@ label-x label-y font font-size -262144 -1 -1 \;, f 103;
 #X msg 769 257 symbol send(\\\\"/\$1\\\\"\\\,_output[0]\\\,x\\\,y)"
 ;
 #X obj 122 492 tag alphaFillOff 1;
-#X obj 740 395 tag onCreate "locals.queue\\\ =\\\ []\\\\n\\\ locals.fillColor\\\ =\\\ \\\\"black\\\\"\\\\n\\\ locals.drawColor\\\ =\\\ \\\\"black\\\\"\\\\n\\\ locals.cursorx\\\ =\\\ 0\\\\n\\\ locals.cursory\\\ =\\\ 0"
+#X obj 740 395 tag onCreate "locals.queue\\\ =\\\ []\\\\n\\\ locals.fillColor\\\ =\\\ \\\\"black\\\\"\\\\n\\\ locals.drawColor\\\ =\\\ \\\\"black\\\\"\\\\n\\\ locals.lineWidth\\\ =\\\ 1\\\\n\\\ locals.cursorx\\\ =\\\ 0\\\\n\\\ locals.cursory\\\ =\\\ 0"
 ;
 #X connect 0 0 37 0;
 #X connect 1 0 41 0;
