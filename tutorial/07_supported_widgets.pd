@@ -1,13 +1,4 @@
 #N canvas 1232 157 776 686 16;
-#N canvas 0 0 769 392 stage-stuff 1;
-#X obj 20 50 stage/tools/stage_listener my_tgl my_tgl-rcv;
-#X obj 20 100 stage/tools/stage_bng_listener my_bng my_bng-rcv 250
-;
-#X obj 20 150 stage/tools/stage_listener my_hsl my_hsl-rcv;
-#X obj 20 200 stage/tools/stage_listener my_hradio my_hradio-rcv;
-#X obj 20 250 stage/tools/stage_array_listener array1 array1-rcv;
-#X obj 20 300 stage/tools/stage_listener nbx nbx-rcv;
-#X restore 468 95 pd stage-stuff;
 #X obj 302 356 tgl 50 0 my_tgl my_tgl-rcv empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
 #X obj 237 356 bng 50 250 50 0 my_bng my_bng-rcv empty 17 7 0 10 #fcfcfc
@@ -52,7 +43,16 @@ features within puredata., f 46;
 #X text 55 53 For now \, supported widgets are :;
 #X obj 264 322 nbx 5 22 -999 9999 0 0 nbx nbx-rcv empty 0 -20 0 20
 #ffffff #404040 #000000 0 256;
-#X obj 466 128 stage;
 #X text 75 361 * bng / tgl;
 #X text 75 321 * nbx (number2);
+#X obj 463 82 stage;
+#N canvas 0 50 450 300 stage-stuff 0;
+#X obj 20 50 stage/tools/stage_listener my_tgl my_tgl-rcv;
+#X obj 20 100 stage/tools/stage_bng_listener my_bng my_bng-rcv 250
+;
+#X obj 20 150 stage/tools/stage_listener my_hsl my_hsl-rcv;
+#X obj 20 200 stage/tools/stage_listener my_hradio my_hradio-rcv;
+#X obj 20 250 stage/tools/stage_array_listener array1 array1-rcv;
+#X obj 20 300 stage/tools/stage_listener nbx nbx-rcv;
+#X restore 463 52 pd stage-stuff;
 #X coords 0 -1 1 1 400 500 1 50 50;

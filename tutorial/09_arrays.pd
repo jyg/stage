@@ -1,0 +1,84 @@
+#N canvas 685 235 984 694 16;
+#X obj 768 84 stage;
+#N canvas 0 0 450 300 stage-stuff 0;
+#X obj 20 50 stage/tools/stage_array_listener array1 array1-rcv;
+#X obj 20 100 stage/tools/stage_array_listener array2 array2-rcv;
+#X obj 20 150 stage/tools/stage_array_listener array3 array3-rcv;
+#X obj 20 200 stage/tools/stage_bng_listener refresh refresh-rcv 250
+;
+#X restore 768 54 pd stage-stuff;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array array1 30 float 1;
+#A 0 0.32 0.52 0.576667 0.633333 0.69 0.736667 0.783333 0.83 0.84 0.85
+0.78 0.73 -0.34 -0.38 -0.42 -0.415 -0.41 -0.405 -0.4 -0.37 -0.34 -0.31
+-0.27 -0.23 -0.17 -0.155 -0.14 -0.12 -0.14 -0.09;
+#X coords 0 1 29 -1 200 140 1;
+#X restore 62 73 graph;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array array2 30 float 5;
+#A 0 1.01427 -0.428567 -0.471424 -0.457138 -0.457138 -0.442853 -0.442853
+-0.442853 -0.399996 -0.271426 0.114284 0.114284 0.0714277 -0.371425
+-0.485709 -0.628565 -0.685707 -0.799992 -0.857134 -0.799992 -0.599994
+-0.38571 -0.199998 -0.0285712 0.185712 0.157141 0.0714277 -0.0142857
+0.61427 0.857124;
+#X coords 0 1 29 -1 200 140 1;
+#X restore 238 372 graph;
+#X obj 452 226 stage/array_style array1;
+#A saved -alpha_fill 0.349206;
+#A saved -alpha_back 0.428571;
+#A saved -color_fill #f40018;
+#A saved -color_back #00ff00;
+#A saved -editable 1;
+#A saved -style 1;
+#A saved -linewidth 9;
+#A saved -color #d0aef0;
+#X obj 500 444 stage/array_style array2;
+#A saved -alpha_fill 0;
+#A saved -alpha_back 0;
+#A saved -color_fill #ffffff;
+#A saved -color_back #ffffff;
+#A saved -editable 1;
+#A saved -style 2;
+#A saved -linewidth 7;
+#A saved -color #ff0000;
+#X obj 608 151 s array1-rcv;
+#X msg 607 124 refresh;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array array3 20 float 3;
+#A 0 0.12 0.43 -0.05 0.31 0.255 0.38 0.02 0.11 0.2 0.31 0.42 0.55 0.62
+0.69 0.746667 0.803333 0.86 0.93 1 1;
+#X coords 0 1 20 -1 200 140 1;
+#X restore 238 372 graph;
+#X text 69 245 MULTIPLE ARRAYS;
+#X text 64 276 [stage] cannot export multiple arrays embedded in one
+graph, f 60;
+#X text 66 305 Arrays must be created separately and superposed in
+the patch. Only last created graph can be editable from Open Stage
+Control interface, f 67;
+#X obj 500 474 stage/array_style array3;
+#A saved -alpha_fill 0;
+#A saved -alpha_back 0;
+#A saved -color_fill #ffffff;
+#A saved -color_back #ffffff;
+#A saved -editable 1;
+#A saved -style 0;
+#A saved -linewidth 14;
+#A saved -color #00ff00;
+#X obj 102 621 s array2-rcv;
+#X obj 95 651 s array3-rcv;
+#X text 292 56 You have to refresh OSC graph when it has been changed
+programmatically or from pd GUI ->, f 37;
+#X obj 691 63 bng 50 250 50 0 refresh refresh-rcv empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 93 562 r refresh;
+#X msg 93 591 refresh;
+#X text 66 523 TODO : linewidth is not implemented in OSC export;
+#X text 303 225 click here ->, f 14;
+#X text 288 181 use [array_style] to set color and background style
+, f 45;
+#X connect 7 0 6 0;
+#X connect 16 0 7 0;
+#X connect 17 0 18 0;
+#X connect 18 0 13 0;
+#X connect 18 0 14 0;
+#X coords 0 -1 1 1 700 500 1 50 50;

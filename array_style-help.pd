@@ -1,0 +1,21 @@
+#N canvas 0 0 680 385 16;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array my_array 10 float 3;
+#A 0 0 0.0857142 0.314283 0.385711 0.414282 0.499996 0.571423 0.757136
+0.799992 0;
+#X coords 0 1 10 -1 200 140 1;
+#X restore 82 177 graph;
+#X text 302 123 <- click to edit array style;
+#X text 470 290 pd > 0.52;
+#X obj 88 125 array_style my_array;
+#A saved -alpha_fill 0;
+#A saved -alpha_back 0;
+#A saved -color_fill #ffffff;
+#A saved -color_back #ffffff;
+#A saved -editable 1;
+#A saved -style 0;
+#A saved -linewidth 5;
+#A saved -color #ee6c00;
+#X text 52 17 array_style <array_name>;
+#X text 43 59 This abstraction defines array style and saves settings
+within the patch, f 42;
