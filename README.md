@@ -34,7 +34,7 @@ Once created, the script has to be executed by the OpenStageControl server, and 
 * comment
 * array
 * mob/lcd 
-## To DO
+## To do list
 * canvas
 * symbol box
 * openpanel and savepanel abstractions for file browsing from O.S.C.
