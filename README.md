@@ -34,3 +34,6 @@ Once created, the script has to be executed by the OpenStageControl server, and 
 * comment
 * array
 * mob/lcd 
+
+## Showcase
+![image](https://user-images.githubusercontent.com/1431894/156921631-96b51600-0329-4f5b-a407-548cca0c7493.png)
