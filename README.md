@@ -36,4 +36,7 @@ Once created, the script has to be executed by the OpenStageControl server, and 
 * mob/lcd 
 
 ## Showcase
+* MobMupic : UPIC-style sequencer
 ![image](https://user-images.githubusercontent.com/1431894/156921631-96b51600-0329-4f5b-a407-548cca0c7493.png)
+![image](https://user-images.githubusercontent.com/1431894/156921761-6cc8ff25-da6c-4ae5-8875-c84f9579f52c.png)
+
