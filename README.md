@@ -10,7 +10,7 @@ Once created, the script has to be executed by the OpenStageControl server, and 
 
 ## Requirements
 * pd > 0.52
-* iemguts externals lib
+* **iemguts** + **iemlib** externals libs
 
 ## Install
 * You must preliminary have installed [Open Stage Control stuff](https://openstagecontrol.ammd.net/) .
