@@ -23,6 +23,19 @@ Once created, the script has to be executed by the OpenStageControl server, and 
 
 ![image](https://user-images.githubusercontent.com/1431894/155305485-2c28d239-0457-4c5b-bf05-f5ab8959ade9.png)
 
+* you get the following abstraction
+
+![image](https://user-images.githubusercontent.com/1431894/158797114-9f49b79d-9212-4494-83c0-4126d8647d63.png)
+
+* if you click on green button ("network_settings"), you get the network configuration window.
+
+![image](https://user-images.githubusercontent.com/1431894/158797367-466d1bf1-b002-40ec-863c-7ab6ac083ccb.png)
+
+* compare the port settings with the corresponding properties values in Open Stage Control server : 
+
+![image](https://user-images.githubusercontent.com/1431894/158798624-e4e03641-224c-47d5-901d-e3eea94c4d8e.png)
+![image](https://user-images.githubusercontent.com/1431894/158798647-5432ec9e-3c0e-4fcf-9f01-b10a88d6f185.png)
+
 * read doc and tutorials
 
 ## Currently supported and exported widgets :
