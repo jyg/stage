@@ -2,6 +2,10 @@
 Controlling PureData patches from browser with [Open Stage Control](https://openstagecontrol.ammd.net/) server.
 ![image](https://user-images.githubusercontent.com/1431894/154551869-8065fbe2-da76-4f52-9215-c1da3cfe7fc4.png)
 
+
+https://github.com/jyg/stage/assets/1431894/e0873c08-9b2b-4480-9d8b-f8c90cd0a6c4
+
+
 **Warning : very alpha work in progress !**
 
 **STAGE** is a series of abstractions for quickly creating an **OpenStageControl** .json file with GUI elements exported from an existing **PureData patch**. 
